@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1835C7AB-531C-6CCA-3580-5EDDEF1E9754}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.5.4p4</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_4;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_4;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Classes\CustomRect.cs" />
+    <Compile Include="Assets\Scripts\Classes\Dice.cs" />
+    <Compile Include="Assets\Scripts\Classes\Point.cs" />
+    <Compile Include="Assets\Scripts\Classes\PreserveItemInInventory.cs" />
+    <Compile Include="Assets\Scripts\Classes\RemoveCloneFromName.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\AddXP.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\EquipmentExamineMessage.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\GetGameObjectViaMouse.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\GetRectBasedOnResolution.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\MaxSpawnGenerator.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\ModelControl.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\NPCMover.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\NewBonusHP.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\NewShieldAttributes.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\NewWeaponAttributes.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\SaveLoad.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\StaticTrace.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\TagKeys.cs" />
+    <Compile Include="Assets\Scripts\Classes\Static\Validator.cs" />
+    <Compile Include="Assets\Scripts\Classes\TargetController.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Domain\Aggregates\MainAggregate\MainAggregate.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Domain\Values\FighterAttributes.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Domain\Values\FighterAttributesBackEnd\ItemEquipBackEnd.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Domain\Values\FighterAttributesBackEnd\ItemUnequipBackEnd.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Domain\Values\FighterAttributesBackEnd\UpdateBonusAttributeBackEnd.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Domain\Values\InputSettings.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Repository\Factories\CreatePlayerInventoryFactory.cs" />
+    <Compile Include="Assets\Scripts\DDD Framework\Repository\SerializerRepositories\SerializerRepository.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\AIState.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\BehaviorState.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\EquipmentSlotState.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\GameState.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\MovementType.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\SceneState.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\TargetingState.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\TileType.cs" />
+    <Compile Include="Assets\Scripts\Enumerations\TurnState.cs" />
+    <Compile Include="Assets\Scripts\GUI Components\GUIBox.cs" />
+    <Compile Include="Assets\Scripts\GUI Components\GUIButton.cs" />
+    <Compile Include="Assets\Scripts\GUI Components\GUILabel.cs" />
+    <Compile Include="Assets\Scripts\GUIController\CharacterSheetController.cs" />
+    <Compile Include="Assets\Scripts\GUIController\CharacterSheetGUI.cs" />
+    <Compile Include="Assets\Scripts\GUIController\CharacterSheetTownGUI.cs" />
+    <Compile Include="Assets\Scripts\GUIController\GUIController.cs" />
+    <Compile Include="Assets\Scripts\GUIController\GameMenuGUI.cs" />
+    <Compile Include="Assets\Scripts\GUIController\HPGUI.cs" />
+    <Compile Include="Assets\Scripts\GUIController\InventoryGUI.cs" />
+    <Compile Include="Assets\Scripts\GUIController\ItemActionMenu.cs" />
+    <Compile Include="Assets\Scripts\GUIController\MainGUIController.cs" />
+    <Compile Include="Assets\Scripts\GUIController\NameBox.cs" />
+    <Compile Include="Assets\Scripts\GUIController\TownMenuGUI.cs" />
+    <Compile Include="Assets\Scripts\MainController\Backup\OldMapController.cs" />
+    <Compile Include="Assets\Scripts\MainController\GameStateController.cs" />
+    <Compile Include="Assets\Scripts\MainController\ItemController.cs" />
+    <Compile Include="Assets\Scripts\MainController\ItemGenerator.cs" />
+    <Compile Include="Assets\Scripts\MainController\LadderGenerator.cs" />
+    <Compile Include="Assets\Scripts\MainController\MainInventory.cs" />
+    <Compile Include="Assets\Scripts\MainController\MapController.cs" />
+    <Compile Include="Assets\Scripts\MainController\MonsterController.cs" />
+    <Compile Include="Assets\Scripts\MainController\MonsterGenerator.cs" />
+    <Compile Include="Assets\Scripts\MainController\RestartScene.cs" />
+    <Compile Include="Assets\Scripts\MessageWindow\MessageWindow.cs" />
+    <Compile Include="Assets\Scripts\ModelController\Aggregate.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\Fighter.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\InputAction.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\InputAttack.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\InputMove.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\LoadToTown.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\NameMouseOver.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\PickUpTrigger.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\PlayerActions.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\PreserveGameObject.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\Tile.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\TileMove.cs" />
+    <Compile Include="Assets\Scripts\MonobehaviourScripts\TileSpriteController.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\AStar Pathfinder\Interface\IDistance.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\AStar Pathfinder\Interface\IHeuristicDistance.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\AStar Pathfinder\Interface\IPathStart.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\AStar Pathfinder\PathFinder.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\DungeonGenerator\Dungeon.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\DungeonGenerator\Interface\IGetDungeonLevel.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\DungeonGenerator\Interface\IGetTile.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\DungeonGenerator\Interface\IInBounds.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\DungeonGenerator\Interface\IIsBlocked.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\DungeonGenerator\Interface\IMap.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\Logger\Interface\ILogger.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\Logger\Logger.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\Tile\AbstractTile.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\Tile\Interface\IEqualToOtherPosition.cs" />
+    <Compile Include="Assets\Scripts\SOLIDPractice\Tile\Interface\IGetPosition.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\BaseAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\DerivedAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\ElementalAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\GoldAndLevelAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\IBaseAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\IDerivedAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\IElementalAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\IGoldAndLevelAttributesComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\IInputSettingsComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Components\InputSettingsComponent.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Configuration\AppConfig.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Entities\IPlayerEntity.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Entities\PlayerEntity.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Models\BaseAttributes.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Models\DerivedAttributes.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Models\DerivedItemAttributes.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Models\ElementalAttributes.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Models\GoldAndLevelAttributes.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Models\SoloRPGHUB.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Models\SoloRPGItem.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Repository\Base\ISoloRPGRepository.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Repository\Base\SoloRPGRepository.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Repository\Specific Repositories\BaseAttributesRepository.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Repository\Specific Repositories\DerivedAttributesRepository.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Repository\Specific Repositories\ElementalAttributesRepository.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Repository\Specific Repositories\GoldAndLevelAttributesRepository.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\Repository\Specific Repositories\InputSettingsRepository.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\Enter Derived Classes\Enter.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IEnter.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IExit.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IOnDrop.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IOnEquip.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IOnExamine.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IOnMutatorEquip.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IOnMutatorUnequip.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IOnTarget.cs" />
+    <Compile Include="Assets\Scripts\SoloRPGScripts\SoloRPGItems\Methods\IOnUnequip.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\ItemAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\AbstractItemAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\BlankItemAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\ConfusionScroll\ConfusionScrollAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\ConfusionScroll\CreateConfusionScroll.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\FireballScroll\CreateFireballScroll.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\FireballScroll\FireballScrollAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\LightningBoltScroll\CreateLightningBoltScroll.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\LightningBoltScroll\LightningBoltScrollAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\Potion\CreatePotion.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\Potion\PotionAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\ShieldEquipment\CreateShield.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\ShieldEquipment\ShieldAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\SwordEquipment\CreateSword.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\ItemScripts\StateClasses\SwordEquipment\SwordAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\NPCScripts\MonsterAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\NPCScripts\StateClasses\AbstractNPCAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\NPCScripts\StateClasses\ConfusionAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\NPCScripts\StateClasses\IdleAI.cs" />
+    <Compile Include="Assets\Scripts\StateClassScripts\NPCScripts\StateClasses\MeleeAttackAI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Prefabs\Resources\AppConfig.txt" />
+    <None Include="Assets\Scripts\SOLIDPractice\AStar Pathfinder\AStarPathFinder.txt" />
+    <None Include="Assets\Scripts\SOLIDPractice\DungeonGenerator\ClassicDungeon.txt" />
+    <None Include="Assets\Scripts\SOLIDPractice\Logger\UnityLogger.txt" />
+    <None Include="Assets\Scripts\SOLIDPractice\Tile\MapTile.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

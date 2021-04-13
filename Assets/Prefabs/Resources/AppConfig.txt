@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<BaseAttributesFileName file="BaseAttributesFileName.gd"></BaseAttributesFileName>
+	<BonusAttributesFileName file="BonusAttributesFileName.gd"></BonusAttributesFileName>
+	<TotalAttributesFileName file="TotalAttributesFileName.gd"></TotalAttributesFileName>
+	<POWElementsFileName file="POWElementsFileName.gd"></POWElementsFileName>
+	<DEFElementsFileName file="DEFElementsFileName.gd"></DEFElementsFileName>
+	<GoldAndLevelAttributesFileName file="GoldAndLevelAttributesFileName.gd"></GoldAndLevelAttributesFileName>
+	<DerivedAttributesFileName file="DerivedAttributesFileName.gd"></DerivedAttributesFileName>
+	<InputSettingsFileName file="InputSettingsFileName.gd"></InputSettingsFileName>
+</config>

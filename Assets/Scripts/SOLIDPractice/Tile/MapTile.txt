@@ -1,0 +1,222 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MapTile : AbstractTile
+{
+    #region Member Variables
+
+    private Transform Transform;
+
+    private TileType Type;
+
+    private string TileName;
+
+    private bool Blocked;
+    private bool BlockSight;
+
+    private int _StepCost;
+    private int _HeuristicCost;
+    private int _TotalCost;
+
+    #endregion
+
+    #region Properties
+
+    public int StepCost
+    {
+        get
+        {
+            return _StepCost;
+        }
+
+        set
+        {
+            _StepCost = value;
+        }
+    }
+
+    public int HeuristicCost
+    {
+        get
+        {
+            return _HeuristicCost;
+        }
+
+        set
+        {
+            _HeuristicCost = value;
+        }
+    }
+
+    public int TotalCost
+    {
+        get
+        {
+            return _TotalCost;
+        }
+
+        set
+        {
+            _TotalCost = value;
+        }
+    }
+
+    #endregion
+
+    #region Constructor
+
+    public MapTile
+        (
+            Transform transform,
+            TileType type,
+            string tileName,
+            bool blocked,
+            bool blockSight,
+            int stepCost,
+            int heuristicCost,
+            int totalCost
+        )
+    {
+        this.Transform = transform;
+
+        this.Type = type;
+
+        this.TileName = tileName;
+
+        this.Blocked = blocked;
+        this.BlockSight = blockSight;
+
+        this._StepCost = stepCost;
+        this._HeuristicCost = heuristicCost;
+        this._TotalCost = totalCost;
+
+        InitializeSight();
+    }
+
+    #endregion
+
+    #region Public Methods
+
+    public override Point GetPosition()
+    {
+        /////////////////////////////////////////
+        //Local Variables
+
+        Point position;
+
+        /////////////////////////////////////////
+
+        position = new Point((int)this.Transform.position.x, (int)this.Transform.position.y);
+
+        return position;
+    }
+
+    public override bool Equals(object obj)
+    {
+        //////////////////////////////////////
+        //Local Variables
+
+        MapTile other;
+
+        Point mainPosition;
+        Point otherPosition;
+
+        //////////////////////////////////////
+
+        if ((obj == null) || GetType() != obj.GetType())
+        {
+            return false;
+        }
+
+        other = (MapTile)obj;
+
+        mainPosition = GetPosition();
+        otherPosition = other.GetPosition();
+
+        return mainPosition == otherPosition;
+    }
+
+    public static bool operator ==(MapTile main, MapTile other)
+    {
+        //////////////////////////////////////////////
+        //Local Variables
+
+        Point mainPosition;
+        Point otherPosition;
+
+        //////////////////////////////////////////////
+
+        mainPosition = main.GetPosition();
+        otherPosition = other.GetPosition();
+
+        return mainPosition == otherPosition;
+    }
+
+    public static bool operator !=(MapTile main, MapTile other)
+    {
+        //////////////////////////////////////////////
+        //Local Variables
+
+        Point mainPosition;
+        Point otherPosition;
+
+        //////////////////////////////////////////////
+
+        mainPosition = main.GetPosition();
+        otherPosition = other.GetPosition();
+
+        return mainPosition != otherPosition;
+    }
+
+    public static bool operator <(MapTile main, MapTile other)
+    {
+        //////////////////////////////////////////////
+        //Local Variables
+
+        Point mainPosition;
+        Point otherPosition;
+
+        //////////////////////////////////////////////
+
+        mainPosition = main.GetPosition();
+        otherPosition = other.GetPosition();
+
+        return mainPosition < otherPosition;
+    }
+
+    public static bool operator >(MapTile main, MapTile other)
+    {
+        //////////////////////////////////////////////
+        //Local Variables
+
+        Point mainPosition;
+        Point otherPosition;
+
+        //////////////////////////////////////////////
+
+        mainPosition = main.GetPosition();
+        otherPosition = other.GetPosition();
+
+        return mainPosition > otherPosition;
+    }
+
+    public override int GetHashCode()
+    {
+        return (this.StepCost ^ this.HeuristicCost ^ this.TotalCost);
+    }
+
+    #endregion
+
+    #region Private Methods
+
+    private void InitializeSight()
+    {
+        if (this.Blocked == true)
+        {
+            this.BlockSight = true;
+        }
+    }
+
+    #endregion
+}

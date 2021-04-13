@@ -1,0 +1,39 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+
+public class UnityLogger : Logger
+{
+    #region Public Methods
+
+    public override void Log(string message)
+    {
+        /////////////////////////////////////////////
+        //Local Variables
+
+        string logMessage;
+
+        /////////////////////////////////////////////
+
+        logMessage = string.Format("{0}:  {1}", DateTime.Now.TimeOfDay.ToString(), message);
+
+        Debug.Log(logMessage);
+    }
+
+    public override void ExceptionLog(string message, string stackTrace)
+    {
+        /////////////////////////////////////////////
+        //Local Variables
+
+        string logMessage;
+
+        /////////////////////////////////////////////
+
+        logMessage = string.Format("{0}:  {1} || {2}", DateTime.Now.TimeOfDay.ToString(), message, stackTrace);
+
+        Debug.Log(logMessage);
+    }
+
+    #endregion
+}

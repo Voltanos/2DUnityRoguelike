@@ -1,0 +1,12 @@
+~*2D Roguelike Controls*~
+
+Move up = Up Arrow
+Move Down = Down Arrow
+Move Left = Left Arrow
+Move Right = Right Arrow
+Open Inventory = I
+Main Menu = Escape
+Go Down Ladder = Greater Sign (>)
+Open Character Sheet = C
+Message Window Scroll Up = PageUp Key
+Message Window Scroll Down = PageDown Key
